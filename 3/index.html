@@ -8,6 +8,12 @@
     <title>How to get the value of a textbox using jQuery</title>    
 </head>
 <body>
-    <input type="text" value="Input text here">
+    <input type="text" value="Input text here" id="text-input">
 </body>
+<script>
+    //listen for cvhanges on input and print val
+    $("#text-input").change(function(){
+        console.log($("#text-input").val())
+    })
+</script>
 </html>
